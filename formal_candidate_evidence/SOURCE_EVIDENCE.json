@@ -147,13 +147,6 @@
     "byte_identical": true
   },
   {
-    "source_role": "manuscript_color_figure_20260727/table8_saturation_lightness_mean_sd.png",
-    "public_path": "formal_candidate_evidence/figures/color_reported_summary_not_recomputed.png",
-    "source_sha256": "85b2cfe10fa4eac9acc366eb5a19568717322022ce0425bb866461733ee01e8c",
-    "public_sha256": "85b2cfe10fa4eac9acc366eb5a19568717322022ce0425bb866461733ee01e8c",
-    "byte_identical": true
-  },
-  {
     "source_role": "models/pretrained/squeezenet1_1-imagenet1k-v1-b8a52dc0.pth",
     "public_path": "formal_candidate_evidence/squeezenet1_1-imagenet1k-v1-b8a52dc0.pth",
     "source_sha256": "b8a52dc049b60e4b6ab68ad0df457362afab8b6304b2febdc1650a5dab4d7e7b",

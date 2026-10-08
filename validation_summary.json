@@ -10,5 +10,6 @@
     "dinov2_v4_logreg_misclassified.csv": 86
   },
   "image_bytes_unchanged": true,
-  "release_status": "review_pending"
+  "publication_status": "published",
+  "formal_analysis_status": "candidate_only"
 }

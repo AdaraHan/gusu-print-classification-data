@@ -84,13 +84,6 @@
     "byte_identical": true
   },
   {
-    "source_role": "reports/manuscript_color_figure_20260727/generate_table8_color_chart.py",
-    "public_path": "code/formal_candidate/generate_color_summary_chart.py",
-    "source_sha256": "c54114eaec3b9587d4327b8259f452ecfa06ad57660e280045d5c191e2389565",
-    "public_sha256": "c54114eaec3b9587d4327b8259f452ecfa06ad57660e280045d5c191e2389565",
-    "byte_identical": true
-  },
-  {
     "source_role": "reports/manuscript_edge_detection_20260727/edge_detection_pipeline.py",
     "public_path": "code/formal_candidate/edge_detection_pipeline.py",
     "source_sha256": "ccec8657e15ec2a165022a4da4ac651bf4fe7af28de9b8ce30577179aaf88672",
