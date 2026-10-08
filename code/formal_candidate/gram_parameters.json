@@ -1,0 +1,79 @@
+{
+  "analysis_status": "candidate_exploratory_not_formal_manifest",
+  "generated_at": "2026-07-29T08:12:33.491881+00:00",
+  "candidate_counts": {
+    "gusu_qing_candidate": 459,
+    "taohuawu_1950s_candidate": 9,
+    "yangliuqing_late_qing_candidate": 100
+  },
+  "analysis_unit": "candidate_image; pairwise distances are dependent",
+  "model": "torchvision squeezenet1_1",
+  "weights": "ImageNet1K V1",
+  "weights_path": "models/pretrained/squeezenet1_1-imagenet1k-v1-b8a52dc0.pth",
+  "weights_sha256": "b8a52dc049b60e4b6ab68ad0df457362afab8b6304b2febdc1650a5dab4d7e7b",
+  "weights_source_url": "https://download.pytorch.org/models/squeezenet1_1-b8a52dc0.pth",
+  "layers": [
+    {
+      "index": 1,
+      "name": "features_1_relu_conv1",
+      "channels": 64
+    },
+    {
+      "index": 4,
+      "name": "features_4_fire3",
+      "channels": 128
+    }
+  ],
+  "preprocessing": {
+    "color": "RGB",
+    "resize": "preserve aspect ratio, long edge 384px, no crop, no padding",
+    "scale": "[0,1]",
+    "normalization_mean": [
+      0.48500001430511475,
+      0.4560000002384186,
+      0.4059999883174896
+    ],
+    "normalization_sd": [
+      0.2290000021457672,
+      0.2240000069141388,
+      0.22499999403953552
+    ],
+    "content_mask": "none; full resized image"
+  },
+  "gram": {
+    "feature_shape": "C x H x W; flatten to F=C x HW",
+    "matrix": "G = F F^T / (C*H*W)",
+    "storage": "upper triangle with off-diagonal multiplied by sqrt(2), preserving Frobenius geometry",
+    "vector_normalization": "L2 unit norm per layer"
+  },
+  "distance": {
+    "per_layer": "cosine distance = 1 - dot(unit_gram_i, unit_gram_j)",
+    "primary": "equal arithmetic mean across the two fixed layers",
+    "direction": "smaller_is_more_similar",
+    "range": [
+      0,
+      2
+    ]
+  },
+  "duplicate_sensitivity": {
+    "source": "reports/formal_aesthetics_reproduction_stage15_revision_20260727/duplicate_pair_priority.csv",
+    "candidate_pairs": 613,
+    "interpretation": "aHash pairs are excluded only in sensitivity summary; they are not declared duplicates"
+  },
+  "forbidden_inferences": [
+    "vanishing point or perspective geometry",
+    "specific brightness or edge mechanism",
+    "craft standard or aesthetic superiority",
+    "historical causality",
+    "formal population inference before manifest freeze"
+  ],
+  "software": {
+    "python": "3.13.14 (main, Jun 10 2026, 12:24:04) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "torch": "2.11.0",
+    "torchvision": "0.26.0",
+    "opencv": "4.13.0",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2"
+  }
+}

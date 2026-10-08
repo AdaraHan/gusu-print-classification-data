@@ -1,0 +1,65 @@
+{
+  "analysis_status": "candidate_exploratory_not_formal_manifest",
+  "generated_at": "2026-07-29T03:22:50.729700+00:00",
+  "input_manifest": "reports/formal_aesthetics_reproduction_20260727/formal_analysis_manifest.csv",
+  "target_table": "reports/formal_line_candidate_experiment_20260727/table9_candidate_exploratory.csv",
+  "analysis_unit": "candidate_image",
+  "candidate_counts": {
+    "gusu_qing_candidate": 459,
+    "taohuawu_1950s_candidate": 9,
+    "yangliuqing_late_qing_candidate": 100
+  },
+  "formula": "sqrt((sum_i w_i cos(2 theta_i))^2 + (sum_i w_i sin(2 theta_i))^2) / sum_i w_i",
+  "orientation": {
+    "quantity": "unsigned Sobel gradient orientation",
+    "domain_degrees": [
+      0,
+      180
+    ],
+    "axial_doubling": "2*theta",
+    "note": "gradient orientation is perpendicular to local line orientation, but axial concentration is invariant to the 90-degree rotation"
+  },
+  "weight": "raw Sobel gradient magnitude sqrt(Gx^2+Gy^2)",
+  "primary_pixel_inclusion": {
+    "normalized_sobel_magnitude_minimum": 0.1,
+    "valid_region": "full resized image excluding one-pixel perimeter"
+  },
+  "range": [
+    0,
+    1
+  ],
+  "interpretation": {
+    "higher": "selected gradient energy is more concentrated in fewer axial directions",
+    "lower": "selected gradient energy is more dispersed across axial directions",
+    "excluded": [
+      "line continuity",
+      "line breakage rate",
+      "craft quality",
+      "aesthetic superiority",
+      "causal regional-style attribution"
+    ]
+  },
+  "preprocessing_inherited_from": "reports/formal_line_candidate_experiment_20260727/run_candidate_line_analysis.py",
+  "resize_long_edge_px": 512,
+  "grayscale": "BT.709",
+  "sobel_kernel_size": 3,
+  "sobel_border_type": "BORDER_REFLECT101",
+  "sobel_normalization": "divide by sqrt(2)*4*255 and clip to [0,1]",
+  "sensitivity": {
+    "normalized_magnitude_thresholds": [
+      0.08,
+      0.1,
+      0.12
+    ],
+    "border_exclusion_fractions": [
+      0.0,
+      0.05,
+      0.1
+    ]
+  },
+  "statistics": {
+    "summary": "image-level mean and sample SD (ddof=1), plus bootstrap mean CI and distribution statistics",
+    "omnibus": "Kruskal-Wallis",
+    "pairwise": "two-sided Mann-Whitney U with Holm adjustment within metric"
+  }
+}

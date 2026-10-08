@@ -1,0 +1,56 @@
+{
+  "original_collection_reported_by_paper": {
+    "total": 3031,
+    "gusu": 566,
+    "non_gusu": 2465
+  },
+  "historical_selected_report": {
+    "total_images": 896,
+    "class_counts": {
+      "gusu": 462,
+      "non_gusu": 434
+    },
+    "corrupted_count": 0,
+    "tiny_count": 0,
+    "non_rgb_count": 0,
+    "exact_dupe_groups": 4,
+    "near_dupe_pairs": 871
+  },
+  "exact_duplicate_pairs": [
+    {
+      "pair_id": "DUP-01",
+      "retained_public_sample_id": "IMG-0066",
+      "duplicate_kind": "byte_identical_MD5",
+      "historical_candidate_count": 2,
+      "removed_candidate_not_in_current_892": true
+    },
+    {
+      "pair_id": "DUP-02",
+      "retained_public_sample_id": "IMG-0085",
+      "duplicate_kind": "byte_identical_MD5",
+      "historical_candidate_count": 2,
+      "removed_candidate_not_in_current_892": true
+    },
+    {
+      "pair_id": "DUP-03",
+      "retained_public_sample_id": "IMG-0248",
+      "duplicate_kind": "byte_identical_MD5",
+      "historical_candidate_count": 2,
+      "removed_candidate_not_in_current_892": true
+    },
+    {
+      "pair_id": "DUP-04",
+      "retained_public_sample_id": "IMG-0722",
+      "duplicate_kind": "byte_identical_MD5",
+      "historical_candidate_count": 2,
+      "removed_candidate_not_in_current_892": true
+    }
+  ],
+  "current_classification_images": {
+    "total": 892,
+    "gusu": 459,
+    "non_gusu": 433
+  },
+  "evidence_limit": "The historical 896-image directory and full 3031-to-896 item-level selection decisions are unavailable. Near-duplicate pairs are review candidates, not automatically removed images.",
+  "raw_3031_images_in_release": false
+}

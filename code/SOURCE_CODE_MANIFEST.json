@@ -1,0 +1,149 @@
+[
+  {
+    "source_role": "Step1_run_dataset_stats.py",
+    "public_path": "code/source/Step1_run_dataset_stats.py",
+    "source_sha256": "94d78a123dac3645f1595f010ce86b1f77cbcc4934f95a50b52082e2eccad82c",
+    "public_sha256": "94d78a123dac3645f1595f010ce86b1f77cbcc4934f95a50b52082e2eccad82c",
+    "byte_identical": true
+  },
+  {
+    "source_role": "Step2_run_extract_features.py",
+    "public_path": "code/source/Step2_run_extract_features.py",
+    "source_sha256": "012e683b7c8c0000545dcb2fe65480a7dd6379dac559ac830e3e608c349a3e4b",
+    "public_sha256": "012e683b7c8c0000545dcb2fe65480a7dd6379dac559ac830e3e608c349a3e4b",
+    "byte_identical": true
+  },
+  {
+    "source_role": "pipeline_svm/Step3_run_train_svm.py",
+    "public_path": "code/source/Step3_run_train_svm.py",
+    "source_sha256": "6303cdee056e1b61f7385d58b1baef5798ed4a229a7580b8a11067163f021641",
+    "public_sha256": "6303cdee056e1b61f7385d58b1baef5798ed4a229a7580b8a11067163f021641",
+    "byte_identical": true
+  },
+  {
+    "source_role": "Step3_run_export_oof_predictions.py",
+    "public_path": "code/source/Step3_run_export_oof_predictions.py",
+    "source_sha256": "4edcc9ed93070c80a2f80967ffe4476be532ff2e7edbaf33906b5bd9f991fd87",
+    "public_sha256": "4edcc9ed93070c80a2f80967ffe4476be532ff2e7edbaf33906b5bd9f991fd87",
+    "byte_identical": true
+  },
+  {
+    "source_role": "Step4_run_train_effnet_cv_oof.py",
+    "public_path": "code/source/Step4_run_train_effnet_cv_oof.py",
+    "source_sha256": "59ff40188c39a5e7481796f14169ac041b2dac817052f84a1192eab8db598a6d",
+    "public_sha256": "59ff40188c39a5e7481796f14169ac041b2dac817052f84a1192eab8db598a6d",
+    "byte_identical": true
+  },
+  {
+    "source_role": "STEP7_make_all_contact_sheet.py",
+    "public_path": "code/source/STEP7_make_all_contact_sheet.py",
+    "source_sha256": "8a0bc4b186282563bdb53075322dea7b166b3e38d41af50e3e445597c4b83459",
+    "public_sha256": "8a0bc4b186282563bdb53075322dea7b166b3e38d41af50e3e445597c4b83459",
+    "byte_identical": true
+  },
+  {
+    "source_role": "reports/formal_line_candidate_experiment_20260727/run_candidate_line_analysis.py",
+    "public_path": "code/formal_candidate/run_candidate_line_analysis.py",
+    "source_sha256": "c265a8600afdcd62c86f5fd071ca2c8c0cec98a1b535219d08be2de0700482e2",
+    "public_sha256": "c265a8600afdcd62c86f5fd071ca2c8c0cec98a1b535219d08be2de0700482e2",
+    "byte_identical": true
+  },
+  {
+    "source_role": "reports/formal_line_candidate_experiment_20260727/add_direction_concentration_to_table9.py",
+    "public_path": "code/formal_candidate/add_direction_concentration_to_table9.py",
+    "source_sha256": "608b0746c5f370dc17e6c83b12761b0793c80be970694d9b96ef92aeb2c70c52",
+    "public_sha256": "608b0746c5f370dc17e6c83b12761b0793c80be970694d9b96ef92aeb2c70c52",
+    "byte_identical": true
+  },
+  {
+    "source_role": "reports/formal_glcm_candidate_experiment_20260729/run_candidate_glcm_analysis.py",
+    "public_path": "code/formal_candidate/run_candidate_glcm_analysis.py",
+    "source_sha256": "07b4ba18aaea767b7a2e8c441dfebf1a4c4d0c7975cd3fba687609d85ea7181f",
+    "public_sha256": "07b4ba18aaea767b7a2e8c441dfebf1a4c4d0c7975cd3fba687609d85ea7181f",
+    "byte_identical": true
+  },
+  {
+    "source_role": "reports/formal_gram_candidate_experiment_20260729/run_candidate_gram_analysis.py",
+    "public_path": "code/formal_candidate/run_candidate_gram_analysis.py",
+    "source_sha256": "d086ad8e1f93cca3f59076f31e57bf2091724705bcc02aa2916070543191cbf7",
+    "public_sha256": "d086ad8e1f93cca3f59076f31e57bf2091724705bcc02aa2916070543191cbf7",
+    "byte_identical": true
+  },
+  {
+    "source_role": "reports/formal_perspective_candidate_experiment_20260729/run_candidate_vanishing_point_analysis.py",
+    "public_path": "code/formal_candidate/run_candidate_vanishing_point_analysis.py",
+    "source_sha256": "7a52f3a77db97190f228ae40c87345e5b30b605d07ac348257af9d06810446e0",
+    "public_sha256": "7a52f3a77db97190f228ae40c87345e5b30b605d07ac348257af9d06810446e0",
+    "byte_identical": true
+  },
+  {
+    "source_role": "reports/formal_shape_candidate_experiment_20260730/run_candidate_shape_analysis.py",
+    "public_path": "code/formal_candidate/run_candidate_shape_analysis.py",
+    "source_sha256": "5a118f9d2e1cb7c3e4f8c7df99854f79a7edd2e5fb75156665709039b33431ac",
+    "public_sha256": "5a118f9d2e1cb7c3e4f8c7df99854f79a7edd2e5fb75156665709039b33431ac",
+    "byte_identical": true
+  },
+  {
+    "source_role": "reports/manuscript_color_figure_20260727/generate_table8_color_chart.py",
+    "public_path": "code/formal_candidate/generate_color_summary_chart.py",
+    "source_sha256": "c54114eaec3b9587d4327b8259f452ecfa06ad57660e280045d5c191e2389565",
+    "public_sha256": "c54114eaec3b9587d4327b8259f452ecfa06ad57660e280045d5c191e2389565",
+    "byte_identical": true
+  },
+  {
+    "source_role": "reports/manuscript_edge_detection_20260727/edge_detection_pipeline.py",
+    "public_path": "code/formal_candidate/edge_detection_pipeline.py",
+    "source_sha256": "ccec8657e15ec2a165022a4da4ac651bf4fe7af28de9b8ce30577179aaf88672",
+    "public_sha256": "ccec8657e15ec2a165022a4da4ac651bf4fe7af28de9b8ce30577179aaf88672",
+    "byte_identical": true
+  },
+  {
+    "source_role": "reports/formal_line_candidate_experiment_20260727/candidate_line_parameters.json",
+    "public_path": "code/formal_candidate/line_parameters.json",
+    "source_sha256": "c03628e1fd99f90f6f2f4485c4b8acf6a15fcd882aa31145b82835779c5fa99a",
+    "public_sha256": "c03628e1fd99f90f6f2f4485c4b8acf6a15fcd882aa31145b82835779c5fa99a",
+    "byte_identical": true
+  },
+  {
+    "source_role": "reports/formal_line_candidate_experiment_20260727/direction_concentration_parameters.json",
+    "public_path": "code/formal_candidate/direction_concentration_parameters.json",
+    "source_sha256": "0d1f9ba69197dd0eddbca2faacbea855e7a102fc8df7db919a9f9ef4e13abdb8",
+    "public_sha256": "0d1f9ba69197dd0eddbca2faacbea855e7a102fc8df7db919a9f9ef4e13abdb8",
+    "byte_identical": true
+  },
+  {
+    "source_role": "reports/formal_glcm_candidate_experiment_20260729/parameters.json",
+    "public_path": "code/formal_candidate/glcm_parameters.json",
+    "source_sha256": "a96734b2c8028b222d7ab46527b41c6a919208f489e9c362af35ac4488449133",
+    "public_sha256": "a96734b2c8028b222d7ab46527b41c6a919208f489e9c362af35ac4488449133",
+    "byte_identical": true
+  },
+  {
+    "source_role": "reports/formal_gram_candidate_experiment_20260729/gram_parameters.json",
+    "public_path": "code/formal_candidate/gram_parameters.json",
+    "source_sha256": "316e9072f8f53f965c91beb64b06039b0255952130bf15e968cfb1a82c749252",
+    "public_sha256": "316e9072f8f53f965c91beb64b06039b0255952130bf15e968cfb1a82c749252",
+    "byte_identical": true
+  },
+  {
+    "source_role": "reports/formal_perspective_candidate_experiment_20260729/vanishing_point_parameters.json",
+    "public_path": "code/formal_candidate/vanishing_point_parameters.json",
+    "source_sha256": "c456d5b77c498fecbfa8b6dde90f96ba6ea68e79361d90d9bfa12fba2ff49c8f",
+    "public_sha256": "c456d5b77c498fecbfa8b6dde90f96ba6ea68e79361d90d9bfa12fba2ff49c8f",
+    "byte_identical": true
+  },
+  {
+    "source_role": "reports/formal_shape_candidate_experiment_20260730/shape_parameters.json",
+    "public_path": "code/formal_candidate/shape_parameters.json",
+    "source_sha256": "896a9926071e23589247a2add0df9e00983dba58e8e461a79627311db14cfc38",
+    "public_sha256": "4aff4da1624a99c1b38c5db39ec240ccdad3912fe309394df35047008addbcd6",
+    "byte_identical": false
+  },
+  {
+    "source_role": "reports/manuscript_edge_detection_20260727/edge_detection_parameters.json",
+    "public_path": "code/formal_candidate/edge_detection_parameters.json",
+    "source_sha256": "6e9bfd672d303a58e630eedcbe08ab64ea615aab25b9f7d898229d9d2922ab1d",
+    "public_sha256": "5a672227bc91f50dfb8088b0bd8f6c0c5185c0eed2d24214f990a85daca3bf96",
+    "byte_identical": false
+  }
+]

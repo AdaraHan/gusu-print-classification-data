@@ -1,0 +1,4 @@
+group_id,group_label,n_candidate_images,n_with_sufficient_long_lines,n_automatic_candidate_detected,automatic_candidate_detection_fraction,n_with_one_candidate,n_with_two_candidates,median_filtered_long_segments,manual_verified_count,interpretation
+gusu_qing_candidate,姑苏版画（候选）,459,434,380,0.8278867102396514,66,314,55.0,0,automatic_screening_only_not_prevalence
+taohuawu_1950s_candidate,桃花坞年画（候选）,9,9,8,0.8888888888888888,0,8,69.0,0,automatic_screening_only_not_prevalence
+yangliuqing_late_qing_candidate,杨柳青年画（候选）,100,100,82,0.82,20,62,52.5,0,automatic_screening_only_not_prevalence

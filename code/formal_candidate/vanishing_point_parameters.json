@@ -1,0 +1,76 @@
+{
+  "analysis_status": "automatic_candidate_screening_pending_human_review",
+  "generated_at": "2026-07-29T08:13:43.921086+00:00",
+  "candidate_counts": {
+    "gusu_qing_candidate": 459,
+    "taohuawu_1950s_candidate": 9,
+    "yangliuqing_late_qing_candidate": 100
+  },
+  "preprocessing": {
+    "resize_long_edge_px": 1024,
+    "keep_aspect": true,
+    "padding": false,
+    "grayscale": "BT.709",
+    "clahe_clip_limit": 2.0,
+    "clahe_tile_grid": [
+      8,
+      8
+    ]
+  },
+  "line_detection": {
+    "algorithm": "OpenCV LineSegmentDetector LSD_REFINE_STD",
+    "minimum_length": "max(24.0px,0.04*image_diagonal)",
+    "same_border_exclusion_fraction": 0.02,
+    "maximum_lines": 250
+  },
+  "candidate_estimation": {
+    "pair_minimum_angle_degrees": 4.0,
+    "maximum_ransac_pair_intersections": 1200,
+    "angular_support_tolerance_degrees": 3.0,
+    "refinement": "length-weighted least squares on normalized line equations",
+    "maximum_candidates_per_image": 2,
+    "random_seed": 20260729
+  },
+  "acceptance": {
+    "minimum_support_lines": 5,
+    "minimum_active_support_length_ratio": 0.15,
+    "minimum_total_support_length_ratio": 0.08,
+    "maximum_median_residual_degrees": 2.0,
+    "maximum_center_distance_diagonals": 3.0
+  },
+  "confidence_warning": "heuristic ranking score, not calibrated probability",
+  "synthetic_validation": {
+    "true_vp": [
+      410.0,
+      180.0
+    ],
+    "detected_vp": [
+      409.87309452326366,
+      179.92166653497924
+    ],
+    "euclidean_error_px": 0.14913460955739513,
+    "raw_lsd_segments": 52,
+    "filtered_long_segments": 44,
+    "detected_candidates": 1,
+    "status": "passed"
+  },
+  "manual_review_required": [
+    "architectural-line applicability",
+    "whether overlay lines share a meaningful geometric vanishing point",
+    "exclude frames/text/scanning artifacts",
+    "artwork-level interpretation"
+  ],
+  "forbidden_inferences_before_review": [
+    "absence of perspective from non-detection",
+    "prevalence of 1-2 vanishing points",
+    "Chinese-Western hybridity",
+    "historical causality"
+  ],
+  "software": {
+    "python": "3.13.14 (main, Jun 10 2026, 12:24:04) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "opencv": "4.13.0",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2"
+  }
+}

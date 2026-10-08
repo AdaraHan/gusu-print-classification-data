@@ -1,0 +1,105 @@
+{
+  "analysis_status": "candidate_exploratory_not_formal_manifest",
+  "generated_at": "2026-07-27T15:07:23.950461+00:00",
+  "input_manifest": "reports/formal_aesthetics_reproduction_20260727/formal_analysis_manifest.csv",
+  "expected_candidate_counts": {
+    "gusu_qing_candidate": 459,
+    "taohuawu_1950s_candidate": 9,
+    "yangliuqing_late_qing_candidate": 100
+  },
+  "analysis_unit": "candidate_image",
+  "image_preprocessing": {
+    "resize": {
+      "long_edge_px": 512,
+      "keep_aspect_ratio": true,
+      "padding": false
+    },
+    "grayscale": "BT.709 Y=0.2126R+0.7152G+0.0722B",
+    "primary_valid_region": "full resized image excluding one-pixel perimeter",
+    "mask_limitation": "no validated content/frame/background mask"
+  },
+  "sobel": {
+    "kernel_size": 3,
+    "border_type": "BORDER_REFLECT101",
+    "magnitude": "sqrt(Gx^2+Gy^2)",
+    "normalization": "divide by sqrt(2)*4*255 and clip to [0,1]",
+    "primary_threshold": 0.1,
+    "sensitivity_thresholds": [
+      0.08,
+      0.1,
+      0.12
+    ]
+  },
+  "direction_entropy": {
+    "orientation_domain_degrees": [
+      0,
+      180
+    ],
+    "bins": 9,
+    "bin_width_degrees": 20,
+    "weight": "Sobel magnitude",
+    "formula": "-sum(p_k*ln(p_k))/ln(9)",
+    "range": [
+      0,
+      1
+    ]
+  },
+  "canny": {
+    "gaussian_kernel": [
+      5,
+      5
+    ],
+    "gaussian_sigma": 1.0,
+    "primary_thresholds": [
+      50,
+      150
+    ],
+    "sensitivity_thresholds": [
+      [
+        40,
+        120
+      ],
+      [
+        50,
+        150
+      ],
+      [
+        60,
+        180
+      ]
+    ],
+    "aperture_size": 3,
+    "l2gradient": true,
+    "edge_density_formula": "count(edge & valid)/count(valid)"
+  },
+  "border_sensitivity_exclusion_fraction": [
+    0.0,
+    0.05,
+    0.1
+  ],
+  "statistics": {
+    "descriptive": "mean, sample SD, bootstrap 95% CI, median, IQR, min, max",
+    "bootstrap_iterations": 10000,
+    "omnibus": "Kruskal-Wallis",
+    "pairwise": "two-sided Mann-Whitney U, asymptotic",
+    "effect_size": "rank-biserial correlation; positive means group_a higher",
+    "multiple_testing": "Holm within each metric; Holm across two omnibus tests",
+    "random_seed": 20260727
+  },
+  "software": {
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "opencv": "4.10.0",
+    "numpy": "1.26.2",
+    "pandas": "2.1.4",
+    "scipy": "1.11.4",
+    "matplotlib": "3.8.2"
+  },
+  "excluded_claims": [
+    "line continuity",
+    "breakage rate",
+    "craft quality",
+    "aesthetic superiority",
+    "causal attribution to regional style"
+  ]
+}

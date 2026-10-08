@@ -1,0 +1,14 @@
+{
+  "images": 892,
+  "confirmed_identity_rows": 176,
+  "tables": {
+    "effnetv2_v4_oof_predictions.csv": 892,
+    "dinov2_v4_rbf_oof_predictions.csv": 892,
+    "dinov2_v4_logreg_oof_predictions.csv": 892,
+    "effnetv2_v4_misclassified.csv": 46,
+    "dinov2_v4_rbf_misclassified.csv": 71,
+    "dinov2_v4_logreg_misclassified.csv": 86
+  },
+  "image_bytes_unchanged": true,
+  "release_status": "review_pending"
+}

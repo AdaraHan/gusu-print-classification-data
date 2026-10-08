@@ -1,0 +1,163 @@
+[
+  {
+    "source_role": "formal_line_candidate_experiment_20260727/candidate_line_metrics_per_image.csv",
+    "public_path": "formal_candidate_evidence/line_metrics_per_image.csv",
+    "rows": 568,
+    "source_sha256": "8664f5745e6a582dd6fd3955e55c426dffc5b92449ab3040e8d4e2c53425baba",
+    "public_sha256": "81d6fb7e96dc55f69b6cea1fd278fba2b5a237252632bd792d2c17ea3a3a677d"
+  },
+  {
+    "source_role": "formal_line_candidate_experiment_20260727/candidate_direction_concentration_per_image.csv",
+    "public_path": "formal_candidate_evidence/line_direction_per_image.csv",
+    "rows": 568,
+    "source_sha256": "e298e355bd4eb91ce49f6e7ed9198fa057121796e7a37856981de0ce9418d5c0",
+    "public_sha256": "bb048afd6b5be28e57078bb309788086188cf52ec540b2e65b7a87e3f37987f7"
+  },
+  {
+    "source_role": "formal_line_candidate_experiment_20260727/table9_candidate_exploratory.csv",
+    "public_path": "formal_candidate_evidence/paper_table8_candidate.csv",
+    "rows": 3,
+    "source_sha256": "243fc865a77cf39f5a5c374a8019572d25ec69a93fa19feda73411acad7eeb36",
+    "public_sha256": "bea7bd4aab8ad0b2470ba7bb56916e2b0f41b8de7c6a77813c7c4defe679eb15"
+  },
+  {
+    "source_role": "formal_glcm_candidate_experiment_20260729/candidate_glcm_metrics_per_image.csv",
+    "public_path": "formal_candidate_evidence/glcm_metrics_per_image.csv",
+    "rows": 568,
+    "source_sha256": "ebbcde2f78b1a8a1349fb57280261e2163ad5950c39739c39b95741ebfc2576d",
+    "public_sha256": "0aa9f73dcfac5c41325bd540ddab9741c677f34e98300276859b75fc09717ee8"
+  },
+  {
+    "source_role": "formal_glcm_candidate_experiment_20260729/table10_candidate_glcm_reproduction.csv",
+    "public_path": "formal_candidate_evidence/paper_table9_candidate.csv",
+    "rows": 3,
+    "source_sha256": "fef6116f205007ced66af0a4be2edaae0f7589cf0d7ab929397e56c8be5f0424",
+    "public_sha256": "d2676abaa8c31d1ffaa9a832c00f66c8a70cd86923c2d9cb87b1004a0d568959"
+  },
+  {
+    "source_role": "formal_gram_candidate_experiment_20260729/gram_per_image_cohesion.csv",
+    "public_path": "formal_candidate_evidence/gram_per_image_cohesion.csv",
+    "rows": 568,
+    "source_sha256": "34742ed552bf1224d61d7af2629abd442e1b2339573ed8467c1e775c338c1d81",
+    "public_sha256": "e87d83adf447350217731a8d654ec191dc26ef37c232c99ab3150b1d3b31a227"
+  },
+  {
+    "source_role": "formal_gram_candidate_experiment_20260729/gram_pairwise_distances.csv",
+    "public_path": "formal_candidate_evidence/gram_pairwise_distances.csv",
+    "rows": 161028,
+    "source_sha256": "5021e34b0cf61d767532686c34a6514f9070177cdef2244c5650024cd3a4213c",
+    "public_sha256": "77dfbcf66ca1ff2c42e80442d7bb33bbb94639197151b03d6bc97b8263bf8fc3"
+  },
+  {
+    "source_role": "formal_gram_candidate_experiment_20260729/gram_group_pair_summary.csv",
+    "public_path": "formal_candidate_evidence/gram_group_pair_summary.csv",
+    "rows": 12,
+    "source_sha256": "b53fbbcfb0644b55b47df44a0a7d0eb44aa07d5c309509c3c5ff3acbb8035ced",
+    "public_sha256": "2155ccdb597b5a9cb2c45d4bb57332fa3c2668fdf03136fb941cb445d302815a"
+  },
+  {
+    "source_role": "formal_gram_candidate_experiment_20260729/gram_group_centroid_distances.csv",
+    "public_path": "formal_candidate_evidence/gram_group_centroid_distances.csv",
+    "rows": 9,
+    "source_sha256": "1bd055e3fa50bd7fb0807aa32984bc6f2edb3dde697ae9b3f8143743f2635274",
+    "public_sha256": "a8576407ae82e076eea530a7ec3805cc2bb70d9125b13ecb8e90d4fa57e75de7"
+  },
+  {
+    "source_role": "formal_perspective_candidate_experiment_20260729/vanishing_point_metrics_per_image.csv",
+    "public_path": "formal_candidate_evidence/vanishing_point_metrics_per_image.csv",
+    "rows": 568,
+    "source_sha256": "297f3a9f9b3ba387cd9ea3b80b3eb480f63cddc8f76ce5dbe7d22d2a4decc5ac",
+    "public_sha256": "d2c1c7d5b99712465afb9c3599f9f2e9b880cb1ad686f7b9533c14853680301b"
+  },
+  {
+    "source_role": "formal_perspective_candidate_experiment_20260729/vanishing_points_long.csv",
+    "public_path": "formal_candidate_evidence/vanishing_points_long.csv",
+    "rows": 854,
+    "source_sha256": "e7095f5316fcc6fd6527ed79dd8ab2ef84bbb4a04194a2317f062bc05bb065c0",
+    "public_sha256": "5e487530de8c20b21be66cc4e1bab10448d4dfda4a8645834eaa584c95a01455"
+  },
+  {
+    "source_role": "formal_perspective_candidate_experiment_20260729/vanishing_point_supporting_lines.csv",
+    "public_path": "formal_candidate_evidence/vanishing_point_supporting_lines.csv",
+    "rows": 15058,
+    "source_sha256": "c7822e429adc32be425932b4ba10a9499c62ccce26cfa7ff254c7f644ae5e794",
+    "public_sha256": "49cd539e03c2ac1ae00c04bac6aa9a9df41d32dad3658c2c75c717778a1fb7c1"
+  },
+  {
+    "source_role": "formal_perspective_candidate_experiment_20260729/vanishing_point_group_summary.csv",
+    "public_path": "formal_candidate_evidence/vanishing_point_group_summary.csv",
+    "rows": 3,
+    "source_sha256": "9a2c0c10a34dfd7cbb31ad758ca392d21bdb69a9350216ae71603759d7ad7608",
+    "public_sha256": "4e8621932479eb1192440655052c414fa9de721f9a64bb49c35dd5deb653f3af"
+  },
+  {
+    "source_role": "formal_shape_candidate_experiment_20260730/shape_metrics_per_image.csv",
+    "public_path": "formal_candidate_evidence/shape_metrics_per_image.csv",
+    "rows": 568,
+    "source_sha256": "d8d55dc1b4ba6122278142983ac3fa065aa063edd275201dae78ef3a93314dcf",
+    "public_sha256": "99a311820d2cb0ef4f587e3311e3e8cf153d48e6762974d80aae3afd90ab638a"
+  },
+  {
+    "source_role": "formal_shape_candidate_experiment_20260730/table11_candidate_exploratory.csv",
+    "public_path": "formal_candidate_evidence/paper_table10_candidate.csv",
+    "rows": 3,
+    "source_sha256": "947070e848e2fea404d727b92ce1e295af627ee373abf2e0b3849f962d18aaee",
+    "public_sha256": "79c34152d2c6b2e1c4f256ae5621d7c31b86e37e396d37bee9c3ddac46a609c0"
+  },
+  {
+    "source_role": "reports/formal_gram_candidate_experiment_20260729/gram_embeddings.npz",
+    "public_path": "formal_candidate_evidence/gram_embeddings_public.npz",
+    "rows": 568,
+    "source_sha256": "08f1dea81eeb09ed470ed440d115309eef75dc6d0a83056e2584d634bd166121",
+    "public_sha256": "35bc64524463e32085b43ee7eb3de74bfe28d3ddb097fb0a0d326f9b81bc2911"
+  },
+  {
+    "source_role": "formal_line_candidate_experiment_20260727/figure_line_metric_distributions.png",
+    "public_path": "formal_candidate_evidence/figures/line_metric_distributions.png",
+    "source_sha256": "ba89da28c03cd0792a0d07d3b8a2796509bb60d93739da4354eae8a9e64f5f10",
+    "public_sha256": "ba89da28c03cd0792a0d07d3b8a2796509bb60d93739da4354eae8a9e64f5f10",
+    "byte_identical": true
+  },
+  {
+    "source_role": "manuscript_edge_detection_20260727/qc_example/edge_detection_qc_panel.png",
+    "public_path": "formal_candidate_evidence/figures/edge_detection_qc_panel.png",
+    "source_sha256": "e6cad1d174faefc92c7c67a88d03b1cb6a73b18d411062c14880d2a2f281f94d",
+    "public_sha256": "e6cad1d174faefc92c7c67a88d03b1cb6a73b18d411062c14880d2a2f281f94d",
+    "byte_identical": true
+  },
+  {
+    "source_role": "formal_gram_candidate_experiment_20260729/figure_gram_pair_distributions.png",
+    "public_path": "formal_candidate_evidence/figures/gram_pair_distributions.png",
+    "source_sha256": "f8e64f5f7a972200c8f2164cfe9615bfab03c04dd4dc0c26caef94e4966a07c8",
+    "public_sha256": "f8e64f5f7a972200c8f2164cfe9615bfab03c04dd4dc0c26caef94e4966a07c8",
+    "byte_identical": true
+  },
+  {
+    "source_role": "formal_perspective_candidate_experiment_20260729/figure_vanishing_point_candidate_examples.png",
+    "public_path": "formal_candidate_evidence/figures/vanishing_point_candidate_examples.png",
+    "source_sha256": "871d1fe59d749334930a2bcaec4d0981221887aa68694871ee52302ab4dd44b6",
+    "public_sha256": "871d1fe59d749334930a2bcaec4d0981221887aa68694871ee52302ab4dd44b6",
+    "byte_identical": true
+  },
+  {
+    "source_role": "formal_shape_candidate_experiment_20260730/figure_shape_metric_distributions.png",
+    "public_path": "formal_candidate_evidence/figures/shape_metric_distributions.png",
+    "source_sha256": "be72b1fa8a2d9c8ac9214f2850d01eb8017b104a921f05ef8556fa1792383b7a",
+    "public_sha256": "be72b1fa8a2d9c8ac9214f2850d01eb8017b104a921f05ef8556fa1792383b7a",
+    "byte_identical": true
+  },
+  {
+    "source_role": "manuscript_color_figure_20260727/table8_saturation_lightness_mean_sd.png",
+    "public_path": "formal_candidate_evidence/figures/color_reported_summary_not_recomputed.png",
+    "source_sha256": "85b2cfe10fa4eac9acc366eb5a19568717322022ce0425bb866461733ee01e8c",
+    "public_sha256": "85b2cfe10fa4eac9acc366eb5a19568717322022ce0425bb866461733ee01e8c",
+    "byte_identical": true
+  },
+  {
+    "source_role": "models/pretrained/squeezenet1_1-imagenet1k-v1-b8a52dc0.pth",
+    "public_path": "formal_candidate_evidence/squeezenet1_1-imagenet1k-v1-b8a52dc0.pth",
+    "source_sha256": "b8a52dc049b60e4b6ab68ad0df457362afab8b6304b2febdc1650a5dab4d7e7b",
+    "public_sha256": "b8a52dc049b60e4b6ab68ad0df457362afab8b6304b2febdc1650a5dab4d7e7b",
+    "byte_identical": true
+  }
+]

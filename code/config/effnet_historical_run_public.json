@@ -1,0 +1,34 @@
+{
+  "historical_config_sha256": "245cbc42f65343029436b6c2a069f0b4881fe1e51f311e60010e38ad50c8be90",
+  "created_at": "2026-07-23T17:36:42",
+  "device": "mps",
+  "class_to_idx": {
+    "gusu": 0,
+    "non_gusu": 1
+  },
+  "historical_dataset_order_sha256": "72abf0f540b9d2d09d0787f8fda37fd899ff7473d147b3b77c1e5d3d333ccb80",
+  "historical_args": {
+    "data_dir": "./Step2_input_data_v4_merged",
+    "out_dir": "./runs/effnetv2_v4_cv_oof",
+    "reports_dir": "./reports",
+    "report_prefix": "effnetv2_v4",
+    "reference_results": "./runs/effnetv2_v4_cv/cv_results.json",
+    "model": "tf_efficientnetv2_s",
+    "img_size": 224,
+    "pad_fill": 245,
+    "batch_size": 8,
+    "freeze_epochs": 5,
+    "ft_epochs": 30,
+    "lr_head": 0.001,
+    "lr_ft": 0.0001,
+    "n_folds": 5,
+    "seed": 42,
+    "device": "auto",
+    "expected_samples": 892,
+    "expected_gusu": 459,
+    "expected_non_gusu": 433,
+    "copy_images": true,
+    "preflight": false
+  },
+  "publication_note": "The historical script enumerated original filenames. The publication adapter uses sample_id order and the saved fold in manifest.csv."
+}

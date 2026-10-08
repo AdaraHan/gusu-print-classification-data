@@ -1,0 +1,79 @@
+{
+  "experiment_id": "formal_glcm_candidate_experiment_20260729",
+  "experiment_date": "2026-07-29",
+  "scope_status": "Stage-1 candidate images; not a frozen formal manifest",
+  "manifest_path": "reports/formal_aesthetics_reproduction_20260727/formal_analysis_manifest.csv",
+  "manifest_sha256": "6d650ce66d5eb699e3249b824ddc5050e9eb9dd8cbfdedd6281bc3161420c4e7",
+  "expected_counts": {
+    "清代姑苏版画（候选，待确认）": 459,
+    "20世纪50年代桃花坞年画（候选，待确认）": 9,
+    "清末杨柳青年画（候选，待确认）": 100
+  },
+  "statistical_unit": "image (temporary; independent work/edition unresolved)",
+  "preprocessing": {
+    "exif_transpose": true,
+    "rgb": true,
+    "long_edge_px": 512,
+    "preserve_aspect_ratio": true,
+    "padding": false,
+    "resample": "Pillow LANCZOS",
+    "grayscale": "BT.709"
+  },
+  "mask": {
+    "definition": "not boundary-connected HSL near-white/near-neutral background",
+    "primary_l_min": 0.95,
+    "primary_s_max": 0.08,
+    "connectivity": 8,
+    "closing": "3x3, constrained to candidate background",
+    "sensitivity_l_min": [
+      0.93,
+      0.95,
+      0.97
+    ],
+    "sensitivity_s_max": [
+      0.05,
+      0.08,
+      0.1
+    ]
+  },
+  "glcm": {
+    "levels": 32,
+    "quantization": "floor(clip(BT709,0,1)*32)",
+    "block_size_px": 64,
+    "block_stride_px": 64,
+    "block_layout": "center crop to complete non-overlapping blocks",
+    "minimum_valid_pixel_fraction": 0.8,
+    "masked_pairs": "both pair endpoints must be valid",
+    "minimum_valid_pairs": 100,
+    "distances_px": [
+      1,
+      2,
+      4
+    ],
+    "angles_deg": [
+      0,
+      45,
+      90,
+      135
+    ],
+    "symmetric": true,
+    "normed": true,
+    "image_aggregation": "median across accepted blocks x distances x angles"
+  },
+  "statistics": {
+    "group_summary": "mean, sample SD, median, IQR",
+    "bootstrap_mean_ci": 5000,
+    "bootstrap_seed": 20260729,
+    "omnibus": "Kruskal-Wallis + Holm across 4 metrics",
+    "pairwise": "Mann-Whitney U + rank-biserial + Holm across 12 comparisons"
+  },
+  "software": {
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "1.26.2",
+    "pandas": "2.1.4",
+    "scipy": "1.11.4",
+    "matplotlib": "3.8.2",
+    "pillow": "10.2.0"
+  }
+}

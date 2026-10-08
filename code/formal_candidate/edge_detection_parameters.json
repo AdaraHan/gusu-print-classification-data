@@ -1,0 +1,52 @@
+{
+  "status": "qc_defaults_not_frozen_formal_parameters",
+  "analysis_scale": {
+    "long_edge_px": 512,
+    "keep_aspect_ratio": true,
+    "padding": false
+  },
+  "grayscale": {
+    "standard": "BT.709",
+    "formula": "Y = 0.2126R + 0.7152G + 0.0722B"
+  },
+  "sobel": {
+    "kernel_size": 3,
+    "outputs": [
+      "Gx",
+      "Gy",
+      "magnitude"
+    ],
+    "magnitude_formula": "M = sqrt(Gx^2 + Gy^2)",
+    "normalization": "M / (sqrt(2) * 4 * 255), clipped to [0,1]",
+    "qc_threshold": 0.1,
+    "formal_status": "must_be_frozen_on_independent_qc_before_group_analysis"
+  },
+  "canny": {
+    "gaussian_kernel": [
+      5,
+      5
+    ],
+    "gaussian_sigma": 1.0,
+    "qc_low_threshold": 50,
+    "qc_high_threshold": 150,
+    "aperture_size": 3,
+    "l2gradient": true,
+    "formal_status": "must_be_frozen_on_independent_qc_before_group_analysis"
+  },
+  "edge_density": {
+    "definition": "count(Canny_edge & valid_mask) / count(valid_mask)",
+    "unit": "proportion",
+    "formal_valid_mask": "frozen content mask after excluding padding, frame, background and a 1-pixel eroded boundary"
+  },
+  "interpretation_boundary": {
+    "sobel_magnitude": "continuous local luminance-gradient strength",
+    "sobel_strong_gradient_ratio": "thresholded strong-gradient pixel proportion",
+    "canny_edge_density": "binary Canny edge-pixel proportion",
+    "not_supported": [
+      "line continuity",
+      "breakage rate",
+      "craft regularity",
+      "aesthetic superiority"
+    ]
+  }
+}
