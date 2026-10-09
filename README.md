@@ -12,4 +12,4 @@
 
 `figures/` 中两张误判拼图按公开编号排版，未裁剪作品图像；生成代码为 `code/make_public_contact_sheets.py`。
 
-历史数据规模、筛选与去重的现存记录见 `selection_and_dedup_evidence.json`；3031 张原始收集图像未整批纳入。原始文件名与公开编号的映射、内部审计、日志和旧压缩包均不在本仓库中。
+历史数据规模、筛选与去重的现存记录见 `selection_and_dedup_evidence.json`。
